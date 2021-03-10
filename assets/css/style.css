@@ -28,7 +28,7 @@ footer
     default css
 ---------------------------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
 html,
 body {
     width: 100%;
@@ -125,8 +125,8 @@ h6 {
 }
 
 p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     color: #3c6382
@@ -196,11 +196,11 @@ p {
 .left-content h2 {
     font-weight: 700;
     font-size: 57px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .left-content h4 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .right-content {
@@ -213,7 +213,7 @@ p {
 }
 
 .links {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .button {
@@ -268,6 +268,10 @@ p {
     padding: 110px 0px 100px 0px;
 }
 
+.section-title {
+    margin-bottom: 40px;
+}
+
 .section-title h5 {
     color: #1980FA;
 }
@@ -281,6 +285,28 @@ p {
     margin-bottom: 40px;
 }
 
+.single-about {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    margin-left: 25px;
+}
+
+.about-icon {
+    color: #1980FA;
+    font-size: 60px;
+}
+
+.about-text span {
+    font-size: 22px;
+}
+
+.about-right {
+    margin-top: 65px;
+}
+
 
 /*-------------------------------------------------------------------------------------
      section heading
@@ -290,6 +316,122 @@ p {
 /*-------------------------------------------------------------------------------------
      features area
 ---------------------------------------------------------------------------------------*/
+
+.feature {
+    padding: 110px 0px 100px 0px;
+}
+
+.feature-container {
+    background: #F7F9FF;
+    padding: 40px 30px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.feature-container::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    background-color: #0f1d46;
+    -webkit-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.feature-container:hover {
+    color: #fff;
+}
+
+.feature-container:hover::before {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+
+.feature-container:hover>.feature-icon {
+    color: #fff;
+}
+
+.feature-container:hover>.feature-content p {
+    color: #fff;
+}
+
+.feature-icon {
+    color: #1980FA;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+    transition: all 600ms ease;
+}
+
+.feature-content {
+    position: relative;
+    z-index: 1;
+    transition: all 600ms ease;
+}
+
+.feature-content span {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.feature-container .shape-one {
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: #1980FA;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    opacity: 0.4;
+    right: -120px;
+    transform: scale(0);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.feature-container .shape-two {
+    content: '';
+    width: 373px;
+    height: 373px;
+    background: #1980FA;
+    border-radius: 50%;
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.feature-container:hover .shape-one {
+    transform: scale(1);
+    -ms-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+
+.feature-container:hover .shape-two {
+    opacity: 0.4;
+    transform: scale(1);
+    -ms-transition-delay: 600ms;
+    transition-delay: 600ms;
+}
 
 
 /*-------------------------------------------------------------------------------------
