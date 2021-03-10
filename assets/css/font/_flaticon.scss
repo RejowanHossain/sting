@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 10/03/2021 12:45
+    Creation date: 10/03/2021 18:23
     */
 
     @font-face {
@@ -38,23 +38,23 @@
     }
 
     .flaticon-settings:before { content: "\f100"; }
-.flaticon-customer-service:before { content: "\f101"; }
+.flaticon-ribbon:before { content: "\f101"; }
 .flaticon-vector:before { content: "\f102"; }
-.flaticon-ribbon:before { content: "\f103"; }
-.flaticon-wifi-signal:before { content: "\f104"; }
-.flaticon-footprints:before { content: "\f105"; }
-.flaticon-storm:before { content: "\f106"; }
-.flaticon-pulse:before { content: "\f107"; }
-.flaticon-location:before { content: "\f108"; }
-.flaticon-bluetooth:before { content: "\f109"; }
+.flaticon-customer-service:before { content: "\f103"; }
+.flaticon-pin:before { content: "\f104"; }
+.flaticon-bluetooth:before { content: "\f105"; }
+.flaticon-wifi-signal:before { content: "\f106"; }
+.flaticon-footprints:before { content: "\f107"; }
+.flaticon-cloudy:before { content: "\f108"; }
+.flaticon-pulse:before { content: "\f109"; }
     
     $font-Flaticon-settings: "\f100";
-    $font-Flaticon-customer-service: "\f101";
+    $font-Flaticon-ribbon: "\f101";
     $font-Flaticon-vector: "\f102";
-    $font-Flaticon-ribbon: "\f103";
-    $font-Flaticon-wifi-signal: "\f104";
-    $font-Flaticon-footprints: "\f105";
-    $font-Flaticon-storm: "\f106";
-    $font-Flaticon-pulse: "\f107";
-    $font-Flaticon-location: "\f108";
-    $font-Flaticon-bluetooth: "\f109";
+    $font-Flaticon-customer-service: "\f103";
+    $font-Flaticon-pin: "\f104";
+    $font-Flaticon-bluetooth: "\f105";
+    $font-Flaticon-wifi-signal: "\f106";
+    $font-Flaticon-footprints: "\f107";
+    $font-Flaticon-cloudy: "\f108";
+    $font-Flaticon-pulse: "\f109";

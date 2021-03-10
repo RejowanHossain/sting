@@ -58,6 +58,20 @@ a:hover {
     outline: none;
 }
 
+::-webkit-input-placeholder {
+    /* Edge */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
 a,
 button {
     -webkit-transition: 0.3s;
@@ -212,17 +226,9 @@ p {
     margin-top: -65px;
     position: relative;
     -webkit-animation: MoveUpDown 5s linear infinite;
-    ;
 }
 
 @-webkit-keyframes MoveUpDown {
-    /* 0%,
-    100% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 20px;
-    } */
     0% {
         transform: translateY(15px);
     }
@@ -256,7 +262,7 @@ p {
 .button::before {
     position: absolute;
     content: '';
-    left: 91%;
+    left: 55%;
     top: 0px;
     width: 100%;
     height: 100%;
@@ -317,6 +323,7 @@ p {
 .about-icon {
     color: #1980FA;
     font-size: 30px;
+    display: inline-block;
 }
 
 .about-text span {
@@ -390,6 +397,7 @@ p {
     position: relative;
     z-index: 1;
     transition: all 600ms ease;
+    display: inline-block;
 }
 
 .feature-content {
@@ -465,12 +473,111 @@ p {
 
 .left-showcase img {
     width: 100%;
+    -webkit-animation: showcaseAnimation 4s linear infinite;
+}
+
+@-webkit-keyframes showcaseAnimation {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
 }
 
 
 /*-------------------------------------------------------------------------------------
-    video area
+    launching area
 ---------------------------------------------------------------------------------------*/
+
+.launching {
+    padding: 110px 0px 100px 0px;
+    /* background: linear-gradient(90deg, rgba(62, 148, 251, 1) 50%, rgba(72, 154, 251, 1) 58%, rgba(90, 163, 251, 1) 77%, rgba(121, 180, 252, 1) 100%, rgba(151, 197, 253, 1) 100%, rgba(255, 255, 255, 1) 100%); */
+    background: #1980FA;
+}
+
+.section-title.white-text h3,
+.section-title.white-text p {
+    color: #fff;
+}
+
+.timer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer li {
+    margin-left: 50px;
+}
+
+.timer li:first-child {
+    margin-left: 0;
+}
+
+.timer li span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.timer li h2 {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: #fff;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.notification form {
+    width: 100%;
+    position: relative;
+}
+
+.notification h4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.notification input {
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid rgba(212, 63, 141, 0.1);
+    padding: 0px 30px;
+    background: none;
+    color: #242424;
+    background: #fff;
+    box-shadow: 0px 0px 28px 2px rgb(0 0 0 / 10%);
+    outline: none;
+}
+
+.notification .btn-pill {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: auto;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 25px;
+    transition: all 0.3s ease-in;
+}
 
 
 /*-------------------------------------------------------------------------------------
