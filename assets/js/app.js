@@ -4,150 +4,175 @@
         /*---------------------------------------------------
             product carousel
         ----------------------------------------------------*/
-        $('.product-carousel').owlCarousel({
-            loop: true,
-            navText: ['<i class="icofont-simple-left"></i>', '<i class="icofont-simple-right"></i>'],
-            nav: true,
+        $('.product-slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
             autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 450,
-            margin: 20,
-            responsive: {
-                0: {
-                    items: 1
+            autoplaySpeed: 2000,
+            // prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
+            // nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>',
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
                 },
-                768: {
-                    items: 2
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
                 },
-                991: {
-                    items: 3
-                },
-                1200: {
-                    items: 3
-                },
-                1920: {
-                    items: 3
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
         /*---------------------------------------------------
             slider carousel
         ----------------------------------------------------*/
-        $('.slider').owlCarousel({
-            loop: true,
-            navText: ['<i class="icofont-simple-left"></i>', '<i class="icofont-simple-right"></i>'],
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 450,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 1
-                },
-                991: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                },
-                1920: {
-                    items: 1
-                }
-            }
-        });
+        // $('.slider').owlCarousel({
+        //     loop: true,
+        //     navText: ['<i class="icofont-simple-left"></i>', '<i class="icofont-simple-right"></i>'],
+        //     nav: true,
+        //     autoplay: true,
+        //     autoplayTimeout: 5000,
+        //     smartSpeed: 450,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         768: {
+        //             items: 1
+        //         },
+        //         991: {
+        //             items: 1
+        //         },
+        //         1200: {
+        //             items: 1
+        //         },
+        //         1920: {
+        //             items: 1
+        //         }
+        //     }
+        // });
         /*---------------------------------------------------
             testimonial carousel
         ----------------------------------------------------*/
-        $('.testi-carousel').owlCarousel({
-            loop: true,
-            nav: false,
+        $('.testimonial-slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
             autoplay: true,
-            autoplayTimeout: 5000,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            smartSpeed: 450,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
+            autoplaySpeed: 2000,
+            // prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
+            // nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>',
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
                 },
-                768: {
-                    items: 2
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
                 },
-                991: {
-                    items: 3
-                },
-                1200: {
-                    items: 3
-                },
-                1920: {
-                    items: 3
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
         /*---------------------------------------------------
             testimonial carousel two
         ----------------------------------------------------*/
-        $('.testi-carousel-two').owlCarousel({
-            loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            smartSpeed: 450,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                991: {
-                    items: 2
-                },
-                1200: {
-                    items: 2
-                },
-                1920: {
-                    items: 2
-                }
-            }
-        });
+        // $('.testi-carousel-two').owlCarousel({
+        //     loop: true,
+        //     nav: false,
+        //     autoplay: true,
+        //     autoplayTimeout: 5000,
+        //     animateOut: 'fadeOut',
+        //     animateIn: 'fadeIn',
+        //     smartSpeed: 450,
+        //     margin: 30,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         768: {
+        //             items: 2
+        //         },
+        //         991: {
+        //             items: 2
+        //         },
+        //         1200: {
+        //             items: 2
+        //         },
+        //         1920: {
+        //             items: 2
+        //         }
+        //     }
+        // });
         /*---------------------------------------------------
             testimonial carousel three
         ----------------------------------------------------*/
-        $('.testi-carousel-three').owlCarousel({
-            loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            smartSpeed: 450,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                991: {
-                    items: 2
-                },
-                1200: {
-                    items: 2
-                },
-                1920: {
-                    items: 2
-                }
-            }
-        });
+        // $('.testi-carousel-three').owlCarousel({
+        //     loop: true,
+        //     nav: false,
+        //     autoplay: true,
+        //     autoplayTimeout: 5000,
+        //     animateOut: 'fadeOut',
+        //     animateIn: 'fadeIn',
+        //     smartSpeed: 450,
+        //     margin: 30,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         768: {
+        //             items: 2
+        //         },
+        //         991: {
+        //             items: 2
+        //         },
+        //         1200: {
+        //             items: 2
+        //         },
+        //         1920: {
+        //             items: 2
+        //         }
+        //     }
+        // });
         /*---------------------------------------------------
                 magnific popUp
         ----------------------------------------------------*/
