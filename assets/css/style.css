@@ -20,6 +20,30 @@ footer area
 ---------------------------------------------------------------------------------------*/
     
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+    @font-face {
+        font-family: Font Awesome\ 5 Brands;
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+    }
+    
+    @font-face {
+        font-family: Font Awesome\ 5 Free;
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+    }
+    
+    @font-face {
+        font-family: Font Awesome\ 5 Free;
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
+        src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+    }
+    
     html,
     body {
         width: 100%;
@@ -263,10 +287,10 @@ footer area
         width: 100%;
         margin-top: -65px;
         position: relative;
-        -webkit-animation: MoveUpDown 5s linear infinite;
+        animation: MoveUpDown 5s linear infinite;
     }
     
-    @-webkit-keyframes MoveUpDown {
+    @keyframes MoveUpDown {
         0% {
             transform: translateY(15px);
         }
@@ -334,10 +358,10 @@ footer area
     
     .left-showcase img {
         width: 100%;
-        -webkit-animation: showcaseAnimation 4s linear infinite;
+        animation: showcaseAnimation 4s linear infinite;
     }
     
-    @-webkit-keyframes showcaseAnimation {
+    @keyframes showcaseAnimation {
         0% {
             transform: translateY(15px);
         }
@@ -817,7 +841,7 @@ footer area
     
     .reserved span {
         color: #0f1d46;
-        font-weight: 500;
+        font-weight: 600;
     }
     /*-------------------------------------------------------------------------------------
     demo area
