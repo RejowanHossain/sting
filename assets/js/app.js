@@ -1,11 +1,28 @@
 (function($) {
     "use strict";
     $(document).ready(function() {
+        /*---------------------------------------------------
+            smooth scroll 
+        ----------------------------------------------------*/
+        var scroll = new SmoothScroll('a[href*="#"]');
 
-        // meanmenu
+        /*---------------------------------------------------
+            mobile menu 
+        ----------------------------------------------------*/
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
             meanScreenWidth: "992"
+        });
+        /*---------------------------------------------------
+            sticky menu
+        ----------------------------------------------------*/
+
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $(".header").addClass("black");
+            } else {
+                $(".header").removeClass("black");
+            }
         });
 
         /*---------------------------------------------------
@@ -67,8 +84,6 @@
             arrows: false,
             autoplay: true,
             autoplaySpeed: 2000,
-            // prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
-            // nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>',
             speed: 500,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -112,10 +127,6 @@
         });
 
 
-        /*---------------------------------------------------
-            scrollIt plugin activation
-        ----------------------------------------------------*/
-
     });
     /*---------------------------------------------------
         sticky header
@@ -126,6 +137,28 @@
             $(".mainmenu").removeClass("sticky");
         } else {
             $(".mainmenu").addClass("sticky");
+        }
+    });
+
+
+    /*---------------------------------------------------
+        back to top button
+    ----------------------------------------------------*/
+    $(".top-btn").click(function() {
+        $('html,body').animate({
+            "scrollTop": "0"
+        }, 500)
+    });
+
+    /*---------------------------------------------------
+          back to top button fade in/out
+      ----------------------------------------------------*/
+    $(window).scroll(function() {
+        var scrollValue = $(this).scrollTop();
+        if (scrollValue >= 500) {
+            $(".top-btn").fadeIn();
+        } else {
+            $(".top-btn").fadeOut();
         }
     });
 

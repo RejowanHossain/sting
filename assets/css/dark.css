@@ -17,12 +17,14 @@
     .product-btn,
     .testimonial-quote,
     .feature-container .shape-one,
-    .feature-container .shape-two {
+    .feature-container .shape-two,
+    .top-btn {
         background: #0004ff;
     }
     
     .main-menu ul li a:hover,
-    .timer li h2 {
+    .timer li h2,
+    .top-btn {
         color: #fff;
     }
     
@@ -70,4 +72,8 @@
     p,
     .section-title {
         color: #ffff;
+    }
+    
+    .black {
+        background: #000;
     }
