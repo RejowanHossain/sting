@@ -36,6 +36,30 @@ body {
     background: #090909;
 }
 
+.main-menu ul li ul.submenu {
+    border-top: 5px solid #0004ff;
+}
+
+.main-menu ul li ul.submenu li a::before {
+    background: #0004ff;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0004ff;
+}
+
+.mean-container a.meanmenu-reveal {
+    border: 1px solid #fff;
+}
+
+.mean-container a.meanmenu-reveal span {
+    background: #fff none repeat scroll 0 0;
+}
+
 h1,
 h2,
 h3,

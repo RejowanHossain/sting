@@ -1,6 +1,13 @@
 (function($) {
     "use strict";
     $(document).ready(function() {
+
+        // meanmenu
+        $('#mobile-menu').meanmenu({
+            meanMenuContainer: '.mobile-menu',
+            meanScreenWidth: "992"
+        });
+
         /*---------------------------------------------------
             product carousel
         ----------------------------------------------------*/
@@ -10,8 +17,6 @@
             arrows: false,
             autoplay: true,
             autoplaySpeed: 2000,
-            // prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
-            // nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>',
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -21,14 +26,23 @@
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 950,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -95,10 +109,20 @@
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 950,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 },
                 {
