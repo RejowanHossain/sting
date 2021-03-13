@@ -567,7 +567,7 @@
       <section class="footer" id="contact">
         <div class="container">
           <div class="row">
-            <div class=" col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class=" col-lg-4 col-md-6 col-sm-6 mb-4">
               <div class="widget">
                 <h4 class="widget-title">About Us</h4>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -596,36 +596,38 @@
                 <div class="widget-title">
                   <h4>Quick Link</h4>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-              <div class="widget">
-                <h4>Support</h4>
-                <ul>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Support</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
               <div class="widget">
                 <h4>Contact</h4>
-                <ul class="contact-info">
-                  <li><i class="fas fa-map-marker-alt"></i> 66 Broklyn Street, New York <br>United States of America</li>
-                  <li><i class="fas fa-mobile"></i>666 898 000</li>
-                  <li><i class="fas fa-envelope"></i> help@sting.com</li>
-                </ul>
               </div>
+              <form id="contact-form" method="post" action="contact.php" novalidate="true">
+                <div class="messages success error"></div>
+                <div class="controls">
+                  <div class="form-group has-error has-danger">
+                    <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                  </div>
+
+                  <div class="form-group">
+                    <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                  </div>
+
+                  <div class="form-group">
+                    <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                  </div>
+
+                  <button type="submit" class="button button-contact"><span>Send</span></button>
+                </div>
+              </form>
             </div>
+
           </div>
         </div>
       </section>
@@ -664,6 +666,8 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- smooth scroll js-->
     <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- ajax js-->
+    <script src="assets/js/ajax.js"></script>
     <!-- main -->
     <script src="assets/js/app.js"></script>
   </body>
