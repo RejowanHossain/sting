@@ -165,7 +165,7 @@
     /*---------------------------------------------------
         preloader
     ----------------------------------------------------*/
-    $(window).on('load', function() {
-        $('.preloader').fadeOut(500);
-    });
+    $(window).load(function() {
+        $("#loading").fadeOut(500);
+    })
 }(jQuery));

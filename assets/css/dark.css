@@ -77,3 +77,18 @@
     .black {
         background: #000;
     }
+    
+    #loading {
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 99999;
+        margin-top: 0px;
+        top: 0px;
+    }
+    
+    .object {
+        border-top: 5px solid #0004ff;
+        border-left: 5px solid #0004ff;
+    }
